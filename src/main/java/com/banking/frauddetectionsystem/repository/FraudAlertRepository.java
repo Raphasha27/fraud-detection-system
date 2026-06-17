@@ -1,0 +1,10 @@
+package com.banking.frauddetectionsystem.repository;
+
+import com.banking.frauddetectionsystem.model.FraudAlert;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface FraudAlertRepository extends JpaRepository<FraudAlert, String> {
+    List<FraudAlert> findByStatus(String status);
+    List<FraudAlert> findBySeverity(String severity);
+}
