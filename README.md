@@ -12,6 +12,7 @@ AI-powered fraud detection for banking transactions. Detects unusual transfers, 
 - Integration-ready for AI models
 
 
+
 ## Architecture
 
 ```mermaid
@@ -25,7 +26,7 @@ graph LR
     EVT --> FRAUD[Fraud Detection]
 ```
 
-Microservices-based architecture.
+Microservices-based architecture with API Gateway, authentication layer, PostgreSQL persistence, and event-driven communication.
 
 ## Stack
 Java 21, Spring Boot, PostgreSQL, Docker
