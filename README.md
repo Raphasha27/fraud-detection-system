@@ -1,5 +1,7 @@
 # Fraud Detection System
 
+
+[![Coverage](https://img.shields.io/badge/Coverage-JaCoCo-blue?style=flat-square&logo=codecov)](https://github.com/Raphasha27/fraud-detection-system/actions)
 [![CI](https://github.com/koketseraphasha/fraud-detection-system/actions/workflows/ci.yml/badge.svg)](https://github.com/koketseraphasha/fraud-detection-system/actions/workflows/ci.yml)
 
 AI-powered fraud detection for banking transactions. Detects unusual transfers, rapid transactions, location anomalies, and high-risk activity.
