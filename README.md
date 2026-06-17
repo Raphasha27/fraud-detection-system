@@ -11,6 +11,22 @@ AI-powered fraud detection for banking transactions. Detects unusual transfers, 
 - Investigation workflow
 - Integration-ready for AI models
 
+
+## Architecture
+
+```mermaid
+graph LR
+    CL[Client] --> GW[API Gateway]
+    GW --> AUTH[Auth Service]
+    GW --> SVC[Banking Service]
+    SVC --> DB[(PostgreSQL)]
+    SVC --> EVT[Event Bus]
+    EVT --> AUD[Audit Log]
+    EVT --> FRAUD[Fraud Detection]
+```
+
+Microservices-based architecture.
+
 ## Stack
 Java 21, Spring Boot, PostgreSQL, Docker
 
